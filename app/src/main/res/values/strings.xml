@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Checkpoint</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="buttonClick">The Button was clicked</string>
+    <string name="edittexthint">Inserisci il tuo testo qui</string>
+</resources>
