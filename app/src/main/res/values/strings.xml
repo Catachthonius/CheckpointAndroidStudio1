@@ -5,4 +5,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="buttonClick">The Button was clicked</string>
     <string name="edittexthint">Inserisci il tuo testo qui</string>
+    <string name="testo_seconda_activity">Questa è la Activity 2.</string>
 </resources>

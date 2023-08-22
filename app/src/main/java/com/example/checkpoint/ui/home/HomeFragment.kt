@@ -1,5 +1,6 @@
 package com.example.checkpoint.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.checkpoint.MainActivity2
 import com.example.checkpoint.R
 import com.example.checkpoint.databinding.FragmentHomeBinding
 
@@ -23,13 +25,14 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        return root
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,6 +40,11 @@ class HomeFragment : Fragment() {
 
         binding.buttonFirst.setOnClickListener {
             binding.textFirst.text = context?.getString(R.string.buttonClick)
+        }
+
+        binding.buttonToActivity.setOnClickListener {
+            val intent = Intent(requireContext(), MainActivity2::class.java)
+            startActivity(intent)
         }
 
     }
